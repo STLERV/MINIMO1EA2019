@@ -9,6 +9,8 @@ const UsuCtrl = require('../controllers/escuela.controller');
  router.post('/subject', UsuCtrl.postSubject);
  router.post('/student', UsuCtrl.postStudent);
  router.put('/subject/:name', UsuCtrl.AñadirStudent);
+ //router.put('/student/:name', UsuCtrl.AñadiraCarrera)
+ //router.get('/carrera/:name', UsuCtrl.DameCarrera)
  router.get('/student/:name', UsuCtrl.getStudent);
 
 

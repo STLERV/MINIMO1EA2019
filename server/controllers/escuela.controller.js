@@ -47,7 +47,8 @@ usuarioCtrl.postStudent= async (req, res) => {
 
        name: req.body.name,
        adress: req.body.adress,
-       phone: req.body.phone
+       phone: req.body.phone,
+       carrera: req.body.carrera
 
     });
       await studentnew.save();
@@ -73,6 +74,8 @@ usuarioCtrl.postSubject= async (req, res) => {
 };
 
 
+
+
 usuarioCtrl.AñadirStudent = async (req, res) => {
     try{
         console.log(req.params);
@@ -86,6 +89,8 @@ usuarioCtrl.AñadirStudent = async (req, res) => {
 }
 catch{
     res.json({status: '404'});
+
+
 }
 };
 

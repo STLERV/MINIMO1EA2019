@@ -13,8 +13,6 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors({origin: 'http://localhost:4200'}));
 
-//Rputes:
-
 app.use('/api/escuela', require('./routes/routes'));
 
 //Start:
